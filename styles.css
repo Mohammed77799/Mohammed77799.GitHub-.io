@@ -81,47 +81,4 @@ footer {
     border-top: 3px solid #D4AF37; /* خط ذهبي */
 }
 
-/* Media Queries للتجاوب مع الأجهزة المختلفة */
 
-/* للأجهزة اللوحية (عرض أقل من 768px) */
-@media (max-width: 768px) {
-    .container {
-        width: 95%; /* زيادة العرض لملء المساحة */
-        padding: 15px;
-    }
-
-    .store-table th, .store-table td {
-        padding: 10px; /* تقليل الحشو */
-    }
-
-    header h1 {
-        font-size: 2em; /* تصغير حجم العنوان */
-    }
-}
-
-/* للهواتف (عرض أقل من 480px) */
-@media (max-width: 480px) {
-    .container {
-        width: 100%; /* ملء العرض بالكامل */
-        padding: 10px;
-        border-radius: 0; /* إزالة الزوايا المدورة */
-    }
-
-    .store-table th, .store-table td {
-        padding: 8px; /* تقليل الحشو أكثر */
-        font-size: 14px; /* تصغير حجم الخط */
-    }
-
-    header h1 {
-        font-size: 1.5em; /* تصغير حجم العنوان أكثر */
-    }
-
-    .map-link {
-        padding: 5px 10px; /* تصغير حجم الأزرار */
-        font-size: 14px;
-    }
-
-    footer {
-        font-size: 14px; /* تصغير حجم نص التذييل */
-    }
-}
