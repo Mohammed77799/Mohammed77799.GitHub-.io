@@ -1,84 +1,154 @@
 /* إعادة تعيين الهوامش والحشوات */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5F5DC; /* لون بيج دافئ */
-    color: #333;
+    background: linear-gradient(135deg, #f8f3e9, #f2e6d5); /* تدرج لوني كريمي فاخر */
+    color: #3a2820; /* بني غني للنص */
+    line-height: 1.6;
 }
 
 /* تنسيق الرأس */
 header {
-    background-color: rgba(0, 0, 0, 0.7); /* خلفية داكنة شبه شفافة */
-    color: #D4AF37; /* لون ذهبي للنص */
-    padding: 20px;
+    background: linear-gradient(135deg, #4a332b, #2b1810); /* تدرج لوني بني غني */
+    color: #f4e2c4; /* لون ذهبي فاتح */
+    padding: 30px;
     text-align: center;
-    border-bottom: 3px solid #D4AF37; /* خط ذهبي */
+    border-bottom: 4px solid #c6a87d; /* حدود ذهبية */
+    box-shadow: 0 4px 15px rgba(58, 40, 32, 0.4); /* ظل بني عميق */
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.3em;
+    margin-top: 10px;
+    color: #e8d5b5; /* لون ذهبي دافئ */
+    font-style: italic;
 }
 
 /* تنسيق المحتوى الرئيسي */
 .container {
-    width: 90%; /* عرض أقل لتحسين التجاوب */
-    margin: 20px auto;
-    background-color: rgba(255, 255, 255, 0.9); /* خلفية بيضاء شبه شفافة */
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* ظل خفيف */
-    border-radius: 10px; /* زوايا مدورة */
+    width: 90%;
+    margin: 30px auto;
+    background: rgba(255, 252, 247, 0.95); /* خلفية كريمية شفافة */
+    padding: 30px;
+    box-shadow: 0 6px 25px rgba(58, 40, 32, 0.15);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
 }
 
 /* تنسيق الجدول */
 .store-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .store-table th, .store-table td {
-    padding: 12px;
+    padding: 15px;
     text-align: right;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #e6d5c0; /* حدود ذهبية فاتحة */
 }
 
 .store-table th {
-    background-color: #D4AF37; /* لون ذهبي */
-    color: white;
+    background: linear-gradient(135deg, #8b6b4f, #6d4c37); /* تدرج لوني بني فاخر */
+    color: #f4e2c4; /* نص ذهبي فاتح */
     font-weight: bold;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .store-table tr:hover {
-    background-color: rgba(212, 175, 55, 0.1); /* لون ذهبي فاتح عند التمرير */
+    background-color: rgba(198, 168, 125, 0.1); /* لون ذهبي فاتح عند التمرير */
+    transition: background-color 0.3s ease;
 }
 
 /* تنسيق رابط الخريطة */
 .map-link {
     display: inline-block;
-    padding: 6px 12px;
-    background-color: #D4AF37; /* لون ذهبي */
-    color: white;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #8b6b4f, #6d4c37); /* تدرج بني فاخر */
+    color: #f4e2c4; /* نص ذهبي فاتح */
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(58, 40, 32, 0.2);
 }
 
 .map-link:hover {
-    background-color: #B8860B; /* لون ذهبي أغمق عند التمرير */
+    background: linear-gradient(135deg, #6d4c37, #8b6b4f); /* عكس التدرج */
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(58, 40, 32, 0.3);
 }
 
 /* تنسيق التذييل */
 footer {
-    background-color: rgba(0, 0, 0, 0.7); /* خلفية داكنة شبه شفافة */
-    color: #D4AF37; /* لون ذهبي للنص */
+    background: linear-gradient(135deg, #4a332b, #2b1810); /* تدرج بني غني */
+    color: #f4e2c4; /* نص ذهبي فاتح */
     text-align: center;
-    padding: 10px;
-    position: fixed;
+    padding: 20px;
+    position: relative;
     width: 100%;
     bottom: 0;
-    border-top: 3px solid #D4AF37; /* خط ذهبي */
+    border-top: 4px solid #c6a87d; /* حدود ذهبية */
+    font-size: 1em;
+    box-shadow: 0 -4px 15px rgba(58, 40, 32, 0.3);
 }
 
+/* Media Queries للتجاوب مع الأجهزة المختلفة */
 
+/* للأجهزة اللوحية (عرض أقل من 768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* زيادة العرض لملء المساحة */
+        padding: 20px;
+    }
+
+    .store-table th, .store-table td {
+        padding: 12px; /* تقليل الحشو */
+    }
+
+    header h1 {
+        font-size: 2.5em; /* تصغير حجم العنوان */
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+}
+
+/* للهواتف (عرض أقل من 480px) */
+@media (max-width: 480px) {
+    .container {
+        width: 100%; /* ملء العرض بالكامل */
+        padding: 15px;
+        border-radius: 0; /* إزالة الزوايا المدورة */
+    }
+
+    .store-table th, .store-table td {
+        padding: 10px; /* تقليل الحشو أكثر */
+        font-size: 14px; /* تصغير حجم الخط */
+    }
+
+    header h1 {
+        font-size: 2em; /* تصغير حجم العنوان أكثر */
+    }
+
+    .map-link {
+        padding: 8px 16px; /* تصغير حجم الأزرار */
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px; /* تصغير حجم نص التذييل */
+    }
+}
